@@ -1,0 +1,39 @@
+/*
+* @Author: 75497
+* @Date:   2018-07-09 09:28:02
+* @Last Modified by:   75497
+* @Last Modified time: 2018-07-11 10:06:16
+*/
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   /*清除列表样式*/  
+}
+a{
+   text-decoration: none;
+   /*清楚a链接下划线*/
+}
+img{
+	display: block
+}
+body{
+	background-color: #F5F5F5; 
+}
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   /*清除列表样式*/  
+ }                             /*<!--a标签不能用作块元素修改margin或padding的值--> */ 
+a{
+   text-decoration: none;
+   /*清楚a链接下划线*/
+}
+img{
+	display: block
+}
+body{
+   width: 100%;
+	background-color: #F9FAFA; 
+}
