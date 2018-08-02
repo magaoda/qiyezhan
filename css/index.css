@@ -324,18 +324,20 @@
    display: flex;
    justify-content: space-between;
 }
-.animating  .indicator .bt{
+.animating  .indicator a{
+    display: block;
    width: 30px;
    height: 2px;
+   color: #96ACDF;
    background-color: #96ACDF;
    z-index: 20;
 }
 /* .animating  .indicator .bt:hover{
    background-color: #fff;
 } */
-/* .indicator .bt.hot{
-    background: #fff;
-} */
+.indicator a.hot{
+    background-color: #fff;
+}
 .bigCon{
    width: 1170px;
    height: 900px;

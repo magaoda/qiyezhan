@@ -29,7 +29,7 @@ window.onload=function(){
     let iconfont1 = animating .getElementsByClassName("iconfont1")[0];
     let iconfont2 = animating .getElementsByClassName("iconfont2")[0];
     let indicator = animating.getElementsByClassName("indicator")[0];
-    let bt = indicator.getElementsByClassName("bt");
+    let a = indicator.getElementsByTagName("a");
     console.log(ans)
     let t = setInterval(move, 1000);
     let num = 0;
@@ -41,10 +41,10 @@ window.onload=function(){
         }
         for (let i = 0; i < ans.length; i++) {
             ans[i].style.zIndex = 5;
-            bt[i].style.background = "";
+            a[i].classList.remove("hot");
         }
         ans[num].style.zIndex = 10;
-        bt[num].style.background = "#fff";
+        a[num].classList.add("hot");
     }
 
     animating.onmouseenter = function () {
@@ -68,23 +68,23 @@ window.onload=function(){
         }
         for (let j = 0; j < ans.length; j++) {
             ans[j].style.zIndex = 5;
-            bt[j].style.background = "none";
+            a[j].classList.remove("hot");
         }
         ans[num].style.zIndex = 10;
-        bt[num].style.background = "#fff";
+        a[num].classList.add("hot");
     }
 
     iconfont1.onclick = function () {
         move();
     }
-    for (let x = 0; x < bt.length; x++) {
-        bt[x].onclick = function () {
-            for (let y = 0; y < bt.length; y++) {
+    for (let x = 0; x < a.length; x++) {
+        a[x].onclick = function () {
+            for (let y = 0; y < a.length; y++) {
                 ans[y].style.zIndex = 5;
-                bt[y].style.background = "none";
+                a[y].classList.remove("hot");
             }
             ans[x].style.zIndex = 10;
-            bt[x].style.background = "#fff";
+            a[x].classList.add("hot");
             num = x;
         }
     }
