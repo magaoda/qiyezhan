@@ -2,7 +2,7 @@
 * @Author: 75497
 * @Date:   2018-07-10 17:13:50
 * @Last Modified by:   75497
-* @Last Modified time: 2018-08-01 19:06:12
+* @Last Modified time: 2018-08-01 19:28:55
 */
 @import url('base.css');
 .inline{
@@ -79,7 +79,7 @@
 }
 .header .head .item .son{
    width: auto;
-   height: 21px;
+   height: 117px;
    color: #fff;
    float: left;
    font-size: 14px;
@@ -144,6 +144,7 @@
    border-radius: 9px;
    position: relative;
    top: -25px;
+   transition: all 1s;
 }
 .animating .ans1{
    width: 1170px;
@@ -154,6 +155,31 @@
    border-radius: 9px;
    background-image: url("../img/banner-1.34bf8ae.png");
    position: absolute;
+   transition: all 1s;
+   /* top: -25px; */
+}
+.animating .ans2{
+   width: 1170px;
+   height: 414px;
+   margin: 0 auto;
+   /* box-shadow: 0 10px 10px 0 #919FD1; */
+   background-color: blue;
+   border-radius: 9px;
+   background-image: url("../img/banner-3.3c9c8a5.png");
+   position: absolute;
+   transition: all 1s;
+   /* top: -25px; */
+}
+.animating .ans3{
+   width: 1170px;
+   height: 414px;
+   margin: 0 auto;
+   /* box-shadow: 0 10px 10px 0 #919FD1; */
+   background-color: blue;
+   border-radius: 9px;
+   background-image: url("../img/banner-5.cd2cf16.png");
+   position: absolute;
+   transition: all 1s;
    /* top: -25px; */
 }
 /* .animating:hover .iconfont:nth-child(1){
@@ -194,7 +220,7 @@
    margin: auto 0;
    background-image: url("../img/icon-slides.png");
    background-position: -88px;
-   z-index: 3;
+   z-index: 20;
 }
  .iconfont2{
    width: 26px;
@@ -208,7 +234,7 @@
    margin: auto 0;
    background-image: url("../img/icon-slides.png");
    background-position: -134px;
-   z-index: 3;
+   z-index: 20;
 }
 .ans1 .con1{
    width: 100%;
@@ -298,13 +324,19 @@
    display: flex;
    justify-content: space-between;
 }
-.animating  .indicator .bt{
+.animating  .indicator a{
+    display: block;
    width: 30px;
    height: 2px;
+   color: #96ACDF;
    background-color: #96ACDF;
+   z-index: 20;
 }
-.animating  .indicator .bt:hover{
+/* .animating  .indicator .bt:hover{
    background-color: #fff;
+} */
+.indicator a.hot{
+    background-color: #fff;
 }
 .bigCon{
    width: 1170px;
@@ -694,6 +726,106 @@
    text-align: justify;
 }
 
+/* .big{
+   width: 100%;
+   height: 580px;
+   margin: 0  auto 122px; 
+   position: relative;
+   top: 0;
+   left: 0;
+}
+.big  .tou{
+   display: block;
+   width: 25px;
+   height: 18px;
+   position: absolute;
+   bottom: 92px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+}
+.big .pro{
+   width: 100%;
+   height: 475px;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 144px;
+   background: url("../img/program-bg4.4b49e45.png");
+}
+.big .active{
+   width: 1088px;
+   height: 104px;
+   margin:30px auto;
+   display: flex;
+   justify-content: space-between;
+}
+.big .active .son{
+   width: 280px;
+   height: 104px;
+   margin: 0 auto;  
+}
+.big .active .son a{
+   display: block;
+   width: 280px;
+   height: 104px;
+   border-radius: 8px;
+   background-color: #fff;
+   color: #3C648B;
+   font-size: 20px;
+   text-align: center;
+   line-height: 104px;
+   box-shadow: 0 10px 10px 0 #E3E9EF;
+}
+.big .active .son a:hover{
+   background-color: #0068CD;
+   color: #fff;
+   box-shadow: 0 10px 10px 0 #919FD1;
+}
+.big .program{
+   width: 1170px;
+   height: 385px;
+   padding-top: 90px;
+   margin:40px auto;
+   position: relative;
+   left: 0;
+   top: 0
+}
+.big .program .bg{
+   width: 872px;
+   height: 286px;
+   margin: 0 auto;
+   background: rgba(9,22,35,.21);
+}
+.big .program .bg .title1{
+   width: 872px;
+   height: 33px;
+   margin: 0 auto;
+   font-size: 22px;
+   line-height: 33px;
+   text-align: center;
+   color: #fff;
+   padding: 28px 0 26px 0;
+}
+.big .program .bg .text1{
+   width: 750px;
+   height: 78px;
+   margin: 0 auto 5px;
+   font-size: 16px;
+   line-height: 26px;
+   color: #fff;
+   text-align: justify;
+}
+.big .program .bg .text2{
+   width: 750px;
+   height: 52px;
+   margin: 0 auto 5px;
+   font-size: 16px;
+   line-height: 26px;
+   color: #fff;
+   text-align: justify;
+}
+ */
 .new{
    width: 1170px;
    height: 1710px;
